@@ -1,0 +1,6 @@
+configuration {
+ theme: "~/.config/rofi/themes/gruvbox/gruvbox-dark";
+ font: "hack 13";
+ lines: 7;
+ width: 30;
+ }
