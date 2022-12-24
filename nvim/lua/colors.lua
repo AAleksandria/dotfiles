@@ -1,0 +1,26 @@
+-----------------------------------------------------------
+-- Color schemes configuration file
+-----------------------------------------------------------
+-- Import colorscheme with:
+--- require('colors')
+--- See: https://github.com/rose-pine/neovim#custom-colours
+
+--- color names are adapted to the format above
+
+-- local _M = {
+--   bg = '#282c34',
+--   black = '#2E3440',
+--   skyblue = '#81A1C1',
+--   cyan = '#B48EAD',
+--   fg = '#4C566A',
+--   green = '#A3BE8C',
+--   oceanblue = '#5E81AC',
+--   magenta = '#C26BDB',
+--   orange = '#D08770',
+--   red = '#BF616A',
+--   violet = '#9E93E8',
+--   white = '#ECEFF4',
+--   yellow = '#EBCB8B'
+-- }
+--
+-- return _M
