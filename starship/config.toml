@@ -1,0 +1,65 @@
+# не делать отступ между выводом и новой строкой
+add_newline = false
+
+# настройка для вывода самой строки
+format="""
+[┌ ](bold green)\
+$directory\
+$nodejs\
+$golang\
+$git_branch\
+$fill\
+$cmd_duration\
+$time
+[└─](bold green)$character 
+"""
+
+# ------------------------------------
+# ------- настройки модулей ----------
+# ------------------------------------
+
+[character]
+format="$symbol"
+success_symbol = "[❯](bold green) "
+error_symbol = "[✗](bold red) "
+vicmd_symbol = "[V](bold green) "
+
+[cmd_duration]
+format = "[$duration](bold none) "
+min_time = 1_000
+show_milliseconds = true
+
+# заполнитель, расстояние между модулями 
+[fill]
+symbol = " "
+
+# модуль времени
+[time]
+format = '[ $time](bold yellow) '
+disabled = false
+time_format = "%T"
+utc_time_offset = "+2"
+
+# модули вывода инфы о ЯП
+[nodejs]
+disabled = true
+format = "[$version](bold green) "
+
+[python]
+disabled = true
+format = "[$version](bold yellow) "
+
+[golang]
+disabled = true
+format = "[$version](bold cyan) "
+
+[directory]
+format = "[$read_only]($read_only_style)[$path]($style) "
+read_only = ""
+truncation_length = 2
+truncate_to_repo = false
+truncation_symbol = "…/"
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+symbol = ""
