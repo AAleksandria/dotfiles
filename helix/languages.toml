@@ -1,0 +1,1 @@
+use-grammars = { only = ["html", "css", "javascript", "typescript", "toml", "sql", "dockerfile", "python", "go", "vue"] }
